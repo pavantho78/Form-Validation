@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Welcome to the best form on Internet!</h1>
+    <form action ="index2.html" name="myForm" onsubmit="return validateForm()" method="get">
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" placeholder="Enter your FirstName here" required autocomplete="off"><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" placeholder="Enter your Email here" required autocomplete="off"><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Mobile No: <input type="tel" name="fphone" placeholder="Enter your 10 digit Mobile no here-i.e 9988667744" pattern="[0-9]{10}"  required autocomplete="off"><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" placeholder="Enter your Password here" required autocomplete="off"><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Confirm Password: <input type="password" placeholder="Enter your Confirm Password here" name="fcpass" required autocomplete="off"><b><span class="formerror"></span></b>
+        </div>
+        <input class="but" type="submit" value="Submit">
+    </form>
+</body>
+<script src="index.js">
+</script>
+</html>
